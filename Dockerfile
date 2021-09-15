@@ -32,8 +32,8 @@ RUN apt-get update \
     libxtst6 \
     libasound2
 
-WORKDIR ${SONIA_WS}/src
-RUN git clone https://github.com/FlexBE/flexbe_app.git
+# WORKDIR ${SONIA_WS}/src
+# RUN git clone https://github.com/FlexBE/flexbe_app.git
 
 WORKDIR ${SONIA_WS}
 
@@ -53,4 +53,4 @@ RUN chmod +x ${SCRIPT_DIR}/entrypoint.sh && chmod +x ${SCRIPT_DIR}/launch.sh
 RUN echo "source $SONIA_WS_SETUP" >> ~/.bashrc
 
 ENTRYPOINT ["./scripts/entrypoint.sh"]
-# CMD ["./scripts/launch.sh"]
+CMD ["./scripts/launch.sh"]
