@@ -32,8 +32,8 @@ RUN apt-get update \
     libxtst6 \
     libasound2
 
-# WORKDIR ${SONIA_WS}/src
-# RUN git clone https://github.com/FlexBE/flexbe_app.git
+WORKDIR ${SONIA_WS}/src
+RUN git clone https://github.com/sonia-auv/flexbe_app.git
 
 WORKDIR ${SONIA_WS}
 
