@@ -33,7 +33,7 @@ RUN apt-get update \
     libasound2
 
 WORKDIR ${SONIA_WS}/src
-RUN git clone git@github.com:sonia-auv/sonia-behaviors.git
+RUN git clone https://github.com/sonia-auv/sonia-behaviors.git
 
 WORKDIR ${SONIA_WS}
 
