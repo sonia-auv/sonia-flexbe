@@ -35,9 +35,16 @@ RUN apt-get update \
 WORKDIR ${SONIA_WS}/src
 RUN git clone https://github.com/sonia-auv/sonia-behaviors.git
 
+
+
 WORKDIR ${SONIA_WS}
 
 COPY . ${NODE_PATH}
+WORKDIR ${NODE_PATH}/src/sonia_flexbe
+
+RUN chmod +x sonia_flexbe.py
+
+WORKDIR ${SONIA_WS}
 RUN bash -c "source ${ROS_WS_SETUP}; source ${BASE_LIB_WS_SETUP}; catkin_make"
 
 RUN chown -R ${SONIA_USER}: ${SONIA_WS}
