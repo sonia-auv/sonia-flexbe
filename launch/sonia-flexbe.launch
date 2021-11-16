@@ -1,6 +1,6 @@
 <launch>
-    <node name="simulink_monitor"
-        pkg="simulink_monitor"
-        type="simulink_monitor.py"
+    <node name="sonia_flexbe"
+        pkg="sonia_flexbe"
+        type="sonia_flexbe.py"
         output="screen" />
 </launch>
