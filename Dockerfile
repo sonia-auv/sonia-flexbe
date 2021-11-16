@@ -35,13 +35,11 @@ RUN apt-get update \
 WORKDIR ${SONIA_WS}/src
 RUN git clone https://github.com/sonia-auv/sonia-behaviors.git
 
-
-
 WORKDIR ${SONIA_WS}
 
 COPY . ${NODE_PATH}
-WORKDIR ${NODE_PATH}/src/sonia_flexbe
 
+WORKDIR ${NODE_PATH}/src/sonia_flexbe
 RUN chmod +x sonia_flexbe.py
 
 WORKDIR ${SONIA_WS}
@@ -55,7 +53,6 @@ RUN cat $ENTRYPOINT_ABSPATH > ${SCRIPT_DIR}/entrypoint.sh
 RUN echo "roslaunch --wait $LAUNCH_ABSPATH" > ${SCRIPT_DIR}/launch.sh
 
 RUN chmod +x ${SCRIPT_DIR}/entrypoint.sh && chmod +x ${SCRIPT_DIR}/launch.sh
-
 
 RUN echo "source $SONIA_WS_SETUP" >> ~/.bashrc
 
