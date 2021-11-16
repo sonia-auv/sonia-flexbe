@@ -32,6 +32,8 @@ RUN apt-get update \
     libxtst6 \
     libasound2
 
+WORKDIR ${SONIA_WS}/src/behaviors
+RUN git clone https://github.com/sonia-auv/sonia-behaviors.git
 
 WORKDIR ${SONIA_WS}
 
