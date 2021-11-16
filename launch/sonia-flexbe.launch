@@ -1,3 +1,6 @@
 <launch>
-	
+    <node name="simulink_monitor"
+        pkg="simulink_monitor"
+        type="simulink_monitor.py"
+        output="screen" />
 </launch>
