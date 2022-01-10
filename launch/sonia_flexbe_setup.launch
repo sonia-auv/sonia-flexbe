@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find flexbe_onboard)/launch/behavior_onboard.launch" />
+    <node name="be_action_server" pkg="flexbe_widget" type="be_action_server" />
+</launch>
