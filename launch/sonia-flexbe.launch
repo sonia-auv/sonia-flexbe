@@ -1,3 +1,0 @@
-<launch>
-	<include file="$(find flexbe_onboard)/launch/behavior_onboard.launch" />
-</launch>

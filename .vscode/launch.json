@@ -8,7 +8,7 @@
             "name": "ROS: Launch",
             "type": "ros",
             "request": "launch",
-            "target": "/home/sonia/ros_sonia_ws/src/sonia-flexbe/launch/sonia-flexbe.launch",
+            "target": "/home/sonia/ros_sonia_ws/src/sonia_flexbe/launch/sonia_flexbe.launch",
         }
     ]
 }
