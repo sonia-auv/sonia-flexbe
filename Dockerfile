@@ -27,7 +27,7 @@ ENV SONIA_WS_SETUP=${SONIA_WS}/devel/setup.bash
 
 ## ADD EXTRA DEPENDENCIES (GIT and ROS Remote Debuging)
 RUN apt-get update \
-    && apt-get install -y ros-${ROS_DISTRO}-flexbe-behavior-engine \ 
+    && apt-get install -y ros-noetic-flexbe-behavior-engine \ 
     curl \
     libxtst6 \
     libasound2
