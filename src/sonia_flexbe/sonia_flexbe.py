@@ -1,5 +1,4 @@
 #! /usr/bin/env python3
-from http.client import NotConnected
 import os
 import rospy
 import rospkg
