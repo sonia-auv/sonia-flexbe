@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+from http.client import NotConnected
 import os
 import rospy
 import rospkg
@@ -29,8 +30,6 @@ class SoniaFlexbe:
 
         # Services
         rospy.Service('/sonia_flexbe/list_missions', Trigger, self.handle_list_missions)
-
-        self.handle_list_missions(None)
 
         rospy.spin()
     
